@@ -1,0 +1,10 @@
+{
+  "extends": "tslint:latest",
+  "rules": {
+    "quotemark": false,
+    "eofline": false,
+    "typedef-whitespace": false,
+    "no-trailing-whitespace": false,
+    "trailing-comma": false
+  }
+}
