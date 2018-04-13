@@ -20,6 +20,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "s3": "aws s3 cp ~/dev/blondel/dist/ s3://alainblondel-v2/ --profile personal --recursive"
   }
 }
