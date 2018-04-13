@@ -11,9 +11,8 @@ import { IPoint } from "./types";
  */
 export default class App {
   private height: number;
-  private width: number;
-  private ratio: number;
-  private background : HTMLImageElement;
+  private width : number;
+  private ratio : number;
   private canvas: HTMLCanvasElement;
   private points: Point[] = [];
   private ctx   : CanvasRenderingContext2D;
@@ -29,7 +28,6 @@ export default class App {
     this.width = width;
 
     this.createCanvas();
-    // this.importBackground();
     this.animate();
     this.setupListeners();
     this.drawPoints();
@@ -51,27 +49,25 @@ export default class App {
   }
 
   /**
-   * Load the painting for the background
+   * Clears the canvas and updates each point
    * 
    * @private
    * @memberof App
    */
-  private importBackground(): void {
-    this.background = new Image();
-    this.background.src = Background;
-
-    this.background.onload = () => {
-      this.animate();
-    };
-  }
-
-  private animate() {
+  private animate(): void {
     this.ctx.clearRect(0, 0, this.width, this.height);
     this.points.forEach((point) => { point.draw(this.ctx); });
 
     window.requestAnimationFrame(this.animate.bind(this));
   }
 
+  /**
+   * Creates points at their respective positions
+   * and stores them
+   * 
+   * @private
+   * @memberof App
+   */
   private drawPoints(): void {
     PointsData.forEach((pointData: IPoint) => {
       const point = new Point(pointData);
@@ -79,13 +75,28 @@ export default class App {
     });
   }
 
-  private setupListeners() {
-    this.canvas.addEventListener('mousedown', (event) => {
-      this.ratio =  this.width / this.canvas.getBoundingClientRect().width;
-      const hit = this.points.some((point) => {
-        return Math.abs(point.x - event.pageX * this.ratio) < 10 && 
-               Math.abs(point.y - event.pageY * this.ratio) < 10;
-      });
+  /**
+   * Creates mousedown listeners
+   * 
+   * @private
+   * @memberof App
+   */
+  private setupListeners(): void {
+    this.canvas.addEventListener('mousedown', this.clickHandler);
+  }
+
+  /**
+   * Checks for collision with existing points
+   * 
+   * @private
+   * @param {MouseEvent} event 
+   * @memberof App
+   */
+  private clickHandler(event: MouseEvent): void {
+    this.ratio =  this.width / this.canvas.getBoundingClientRect().width;
+    const hit = this.points.some((point) => {
+      return Math.abs(point.x - event.pageX * this.ratio) < 10 && 
+              Math.abs(point.y - event.pageY * this.ratio) < 10;
     });
   }
 }

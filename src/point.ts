@@ -1,5 +1,11 @@
 import { IPoint } from "./types";
 
+/**
+ * Clickable Point
+ * 
+ * @export
+ * @class Point
+ */
 export default class Point {
   public x: number;
   public y: number;
@@ -8,6 +14,11 @@ export default class Point {
   private gradient: CanvasGradient;
   private minimumRadius = 1;
 
+  /**
+   * Creates an instance of Point.
+   * @param {IPoint} data 
+   * @memberof Point
+   */
   constructor(data: IPoint) {
     this.x = data.position.x;
     this.y = data.position.y;
@@ -15,6 +26,12 @@ export default class Point {
     this.speed = Math.random() * 100;
   }
   
+  /**
+   * Updates the Point radius and draws it on the context
+   * 
+   * @param {CanvasRenderingContext2D} ctx 
+   * @memberof Point
+   */
   public draw(ctx: CanvasRenderingContext2D) {
     this.setGradient(ctx);
     
@@ -39,7 +56,14 @@ export default class Point {
     ctx.stroke();
   }
 
-  private setGradient(ctx: CanvasRenderingContext2D) {
+  /**
+   * Creates new radial gradient for the Point
+   * 
+   * @private
+   * @param {CanvasRenderingContext2D} ctx 
+   * @memberof Point
+   */
+  private setGradient(ctx: CanvasRenderingContext2D): void {
     this.gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, 30);
     this.gradient.addColorStop(0, 'rgba(255, 255, 255, 0)');
     this.gradient.addColorStop(0.4, 'rgba(255,255, 255, .5)');
@@ -47,6 +71,13 @@ export default class Point {
     ctx.strokeStyle = this.gradient;
   }
 
+  /**
+   * Calculate the circle radius for the pulse animation
+   * 
+   * @private
+   * @returns {number} 
+   * @memberof Point
+   */
   private pulse(): number {
     const time: number = new Date().getTime();
     return this.minimumRadius + 
@@ -54,6 +85,13 @@ export default class Point {
            * 15;
   }
 
+  /**
+   * Calculate the circle radius for the breathing animation
+   * 
+   * @private
+   * @returns {number} 
+   * @memberof Point
+   */
   private breathe(): number {
     const time: number = new Date().getTime();
     return this.minimumRadius + 
