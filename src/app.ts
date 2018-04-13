@@ -46,6 +46,7 @@ export default class App {
     this.canvas.width = this.width;
     this.canvas.height = this.height;
     this.ctx = this.canvas.getContext('2d');
+    this.ctx.globalCompositeOperation = 'xor';
     this.ctx.lineWidth = 3;
   }
 
