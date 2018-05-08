@@ -1,4 +1,5 @@
 import Background from './painting.jpg';
+import Panel from './panel';
 import Point from "./point";
 import PointsData from './points.json';
 import { IPoint } from "./types";
@@ -82,7 +83,7 @@ export default class App {
    * @memberof App
    */
   private setupListeners(): void {
-    this.canvas.addEventListener('mousedown', this.clickHandler);
+    this.canvas.addEventListener('mousedown', this.clickHandler.bind(this));
   }
 
   /**
@@ -93,10 +94,15 @@ export default class App {
    * @memberof App
    */
   private clickHandler(event: MouseEvent): void {
-    this.ratio =  this.width / this.canvas.getBoundingClientRect().width;
-    const hit = this.points.some((point) => {
-      return Math.abs(point.x - event.pageX * this.ratio) < 10 && 
-              Math.abs(point.y - event.pageY * this.ratio) < 10;
+    const canvasTop: number = (event.target as HTMLElement).getBoundingClientRect().top;
+    this.ratio = this.width / this.canvas.getBoundingClientRect().width;
+
+    const hit = this.points.find((point: Point) => {
+      return Math.abs(point.x - event.pageX * this.ratio) < 20 && 
+             Math.abs(point.y - (event.pageY - canvasTop) * this.ratio) < 20;
     });
+
+    const test = new Panel(hit.data);
+    Panel.render(test);
   }
 }

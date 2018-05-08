@@ -1,3 +1,4 @@
+import PointData from "./point-data";
 import { IPoint } from "./types";
 
 /**
@@ -9,6 +10,8 @@ import { IPoint } from "./types";
 export default class Point {
   public x: number;
   public y: number;
+  public data: PointData;
+  
   private delay: number;
   private speed: number;
   private gradient: CanvasGradient;
@@ -24,6 +27,8 @@ export default class Point {
     this.y = data.position.y;
     this.delay = Math.random() * 10000;
     this.speed = Math.random() * 100;
+
+    this.data = new PointData(data);
   }
   
   /**

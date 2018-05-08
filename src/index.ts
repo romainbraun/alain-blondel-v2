@@ -1,4 +1,4 @@
 import App from './app';
 import './index.css';
 
-const app = new App(1125, 699);
+const app = new App(1680, 1003);

@@ -1,44 +1,201 @@
 [
   {
     "position": {
-      "x": 199,
-      "y": 311
+      "x": 826,
+      "y": 548
     },
-    "title": "Test!"
+    "title": "MULTIVALENCES",
+    "size": "300x100",
+    "date": "2017",
+    "asset": "fullsizeoutput_47f.jpg",
+    "type": "image"
   },
   {
     "position": {
-      "x": 558,
-      "y": 437
+      "x": 862,
+      "y": 597
     },
-    "title": "Test!"
+    "title": "MULTIVALENCES",
+    "size": "300x100",
+    "date": "2017",
+    "asset": "fullsizeoutput_48a.jpg",
+    "type": "image"
   },
   {
     "position": {
-      "x": 893,
-      "y": 176
+      "x": 773,
+      "y": 439
     },
-    "title": "Test!"
+    "title": "MULTIVALENCES",
+    "size": "300x100",
+    "date": "2017",
+    "asset": "fullsizeoutput_48f.jpg",
+    "type": "image"
   },
   {
     "position": {
-      "x": 388,
-      "y": 488
+      "x": 877,
+      "y": 384
     },
-    "title": "Test!"
+    "title": "MULTIVALENCES",
+    "size": "360x80",
+    "date": "2018",
+    "asset": "fullsizeoutput_470.jpg",
+    "type": "image"
   },
   {
     "position": {
-      "x": 911,
-      "y": 594
+      "x": 1253,
+      "y": 542
     },
-    "title": "Test!"
+    "title": "MULTIVALENCES",
+    "size": "180x60",
+    "date": "2017/2018",
+    "asset": "fullsizeoutput_472.jpg",
+    "type": "image"
   },
   {
     "position": {
-      "x": 586,
-      "y": 151
+      "x": 385,
+      "y": 684
     },
-    "title": "Test!"
+    "title": "MULTIVALENCES",
+    "size": "180x60",
+    "date": "2017/2018",
+    "asset": "fullsizeoutput_474.jpg",
+    "type": "image"
+  },
+  {
+    "position": {
+      "x": 1255,
+      "y": 654
+    },
+    "title": "MULTIVALENCES",
+    "size": "180x60",
+    "date": "2017/2018",
+    "asset": "fullsizeoutput_477.jpg",
+    "type": "image"
+  },
+  {
+    "position": {
+      "x": 1232,
+      "y": 413
+    },
+    "title": "MULTIVALENCES",
+    "size": "180x60",
+    "date": "2017/2018",
+    "asset": "fullsizeoutput_479.jpg",
+    "type": "image"
+  },
+  {
+    "position": {
+      "x": 1177,
+      "y": 267
+    },
+    "title": "MULTIVALENCES",
+    "size": "180x60",
+    "date": "2017/2018",
+    "asset": "fullsizeoutput_480.jpg",
+    "type": "image"
+  },
+  {
+    "position": {
+      "x": 882,
+      "y": 285
+    },
+    "title": "MULTIVALENCES",
+    "size": "300x20",
+    "date": "2018",
+    "asset": "fullsizeoutput_481.jpg",
+    "type": "image"
+  },
+  {
+    "position": {
+      "x": 536,
+      "y": 148
+    },
+    "title": "MULTIVALENCES",
+    "size": "300x20",
+    "date": "2018",
+    "asset": "fullsizeoutput_483.jpg",
+    "type": "image"
+  },
+  {
+    "position": {
+      "x": 510,
+      "y": 400
+    },
+    "title": "MULTIVALENCES",
+    "size": "20x60",
+    "date": "2018",
+    "asset": "fullsizeoutput_484.jpg",
+    "type": "image"
+  },
+  {
+    "position": {
+      "x": 1024,
+      "y": 820
+    },
+    "title": "MULTIVALENCES",
+    "size": "180x20",
+    "date": "2018",
+    "asset": "fullsizeoutput_489.jpg",
+    "type": "image"
+  },
+  {
+    "position": {
+      "x": 661,
+      "y": 771
+    },
+    "title": "MULTIVALENCES",
+    "size": "Détail",
+    "date": "2018",
+    "asset": "fullsizeoutput_495.jpg",
+    "type": "image"
+  },
+  {
+    "position": {
+      "x": 178,
+      "y": 522
+    },
+    "title": "Alain Blondel",
+    "asset": "fullsizeoutput_47a.jpg",
+    "type": "image"
+  },
+  {
+    "position": {
+      "x": 1498,
+      "y": 483
+    },
+    "title": "Alain Blondel",
+    "asset": "fullsizeoutput_47c.jpg",
+    "type": "image"
+  },
+  {
+    "position": {
+      "x": 287,
+      "y": 856
+    },
+    "title": "Alain Blondel",
+    "asset": "fullsizeoutput_47d.jpg",
+    "type": "image"
+  },
+  {
+    "position": {
+      "x": 992,
+      "y": 93
+    },
+    "title": "Texte 1",
+    "content": "Ces peintures sont des paysages: <br> Paysages de trajectoires que le regard longe. <br> Paysages de connexions et d’itinéraires en passe passe <br> Paysages qui fatiguent les mises au point  et agitent les formes <br> Paysages de vents sans détresse  <br> Paysages d’abîmes comme d’abysses <br> Paysages de nuits mais de lumières <br> Paysages qui tracent des lignes d’intimités entre nos oppositions habituelles….",
+    "type": "text"
+  },
+  {
+    "position": {
+      "x": 188,
+      "y": 280
+    },
+    "title": "Texte 2",
+    "content": "J’ai mangé Kandinsky.<br>Je me suis glissé dans ses questions,<br>j’ai farfouillé dans ses réponses,<br>J’ai bricolé à l’intérieur de toutes ses affirmations.<br>Un siècle plus tard. <br>Ce livre a tout arrêté net. <br>Évanouies mes questions ritournelles,<br>Estompées mes obsessions valsantes.<br>Tout est tombé du camion.<br>Place nette.<br>Comme un doux retour à des temps initiaux,<br>Présent amnésique.<br>C’est la peinture, seule, qui pourra lui répondre, <br>Dans la contrainte exclusive du Point et de la Ligne,<br>C’est elle qui offrira à mes regards  des chemins inconnus,<br>Qui réalisera des routes contrariées ouvrant sur des panoramas incertains. <br>Des voies qui, aujourd’hui seulement, peuvent devenir visibles.<br>Lignes volatiles en configurations instables<br>Formes dégringolantes pour regard balayant,<br>Ces Multivalences sont une réponse furtive et aventureuse à Monsieur Kandinsky.",
+    "type": "text"
   }
 ]
