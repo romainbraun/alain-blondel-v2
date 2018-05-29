@@ -1,5 +1,6 @@
 import PointData from "./point-data";
 import imageTemplate from "./templates/image-template.html";
+import textTemplate from "./templates/text-template.html";
 
 export default class Panel {
   public static render(panel: Panel): void {
@@ -7,6 +8,24 @@ export default class Panel {
     test.innerHTML = panel.renderedTemplate;
 
     document.body.appendChild(test);
+
+    const closeButton: HTMLElement = document.querySelector('.panel-close');
+
+    closeButton.addEventListener('mousedown', (event) => {
+      this.remove();
+    });
+    window.setTimeout(() => {
+      document.querySelector('.panel').className += ' panel--show';
+    });
+  }
+
+  public static remove(): void {
+    const panel = document.querySelector('.panel');
+
+    panel.className = panel.className.substring(0, panel.className.length - 12);
+    window.setTimeout(() => {
+      document.body.removeChild(document.querySelector('.panel').parentNode);
+    }, 600);
   }
 
   public title: string;
@@ -22,8 +41,24 @@ export default class Panel {
   }
 
   private template(data: PointData): string {
-    return imageTemplate.replace(/\{\{\s?(\w+)\s?\}\}/g, (match, variable): string => {
-      return data[variable].toString() || '';
+    let template;
+
+    switch (data.type) {
+      case 'painting':
+      case 'image':
+        template = imageTemplate;
+        break;
+        case 'text':
+        template = textTemplate;
+        break;
+    
+      default:
+        template = textTemplate;
+        break;
+    }
+
+    return template.replace(/\{\{\s?(\w+)\s?\}\}/g, (match, variable): string => {
+      return (data[variable]) ? data[variable].toString() : '';
     });
   }
 

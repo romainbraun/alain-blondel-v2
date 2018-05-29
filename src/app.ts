@@ -102,7 +102,9 @@ export default class App {
              Math.abs(point.y - (event.pageY - canvasTop) * this.ratio) < 20;
     });
 
-    const test = new Panel(hit.data);
-    Panel.render(test);
+    if (hit) {
+      const test = new Panel(hit.data);
+      Panel.render(test);
+    }
   }
 }

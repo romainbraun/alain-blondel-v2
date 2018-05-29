@@ -1,6 +1,12 @@
-<div class="panel">
-  <h2>{{ title }}</h2>
+<div class="panel panel--{{ type }}">
+  <!-- <h2>{{ title }}</h2> -->
 
-  <img src="{{ asset }}" alt="{{ title }}">
+  <img src="{{ asset }}" alt="{{ title }}" class="img">
+
+  <span>{{ size }}</span>
+
+  <span> - {{ date }}</span>
+
+  <button class="panel-close">Fermer</button>
   
 </div>

@@ -8,5 +8,6 @@ export interface IPoint {
   content?: string;
   asset?: string;
   size?: string;
+  date?: string;
   [key: string]: string | object;
 }

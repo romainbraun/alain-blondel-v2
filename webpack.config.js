@@ -3,6 +3,9 @@ const path               = require('path');
 const HtmlWebpackPlugin  = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ManifestPlugin     = require('webpack-manifest-plugin');
+const CopyWebpackPlugin  = require('copy-webpack-plugin')
+const WriteFilePlugin = require('write-file-webpack-plugin');
+
 
 module.exports = {
   entry: {
@@ -12,7 +15,7 @@ module.exports = {
   mode: 'development',
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
     extensions: ['.ts', '.js'],
@@ -48,7 +51,7 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: path.resolve(__dirname, 'dist/'),
     hot: true
   },
   plugins: [
@@ -59,6 +62,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Alain Blondel, peintre',
       template: './src/index.html'
-    })
+    }),
+    new CopyWebpackPlugin([{
+      from: 'src/assets/',
+      to: 'assets'
+    }]),
+    // new WriteFilePlugin()
   ],
 };

@@ -5,10 +5,10 @@
       "y": 548
     },
     "title": "MULTIVALENCES",
-    "size": "300x100",
-    "date": "2017",
-    "asset": "fullsizeoutput_47f.jpg",
-    "type": "image"
+    "size": "20x180",
+    "date": "2018",
+    "asset": "assets/img/fullsizeoutput_47f.jpeg",
+    "type": "painting"
   },
   {
     "position": {
@@ -16,10 +16,10 @@
       "y": 597
     },
     "title": "MULTIVALENCES",
-    "size": "300x100",
+    "size": "30x90",
     "date": "2017",
-    "asset": "fullsizeoutput_48a.jpg",
-    "type": "image"
+    "asset": "assets/img/fullsizeoutput_48a.jpeg",
+    "type": "painting"
   },
   {
     "position": {
@@ -27,10 +27,10 @@
       "y": 439
     },
     "title": "MULTIVALENCES",
-    "size": "300x100",
+    "size": "30x90",
     "date": "2017",
-    "asset": "fullsizeoutput_48f.jpg",
-    "type": "image"
+    "asset": "assets/img/fullsizeoutput_48f.jpeg",
+    "type": "painting"
   },
   {
     "position": {
@@ -38,10 +38,10 @@
       "y": 384
     },
     "title": "MULTIVALENCES",
-    "size": "360x80",
+    "size": "Détail",
     "date": "2018",
-    "asset": "fullsizeoutput_470.jpg",
-    "type": "image"
+    "asset": "assets/img/fullsizeoutput_470.jpeg",
+    "type": "painting"
   },
   {
     "position": {
@@ -49,10 +49,10 @@
       "y": 542
     },
     "title": "MULTIVALENCES",
-    "size": "180x60",
-    "date": "2017/2018",
-    "asset": "fullsizeoutput_472.jpg",
-    "type": "image"
+    "size": "100x300",
+    "date": "2017",
+    "asset": "assets/img/fullsizeoutput_472.jpeg",
+    "type": "painting"
   },
   {
     "position": {
@@ -60,10 +60,10 @@
       "y": 684
     },
     "title": "MULTIVALENCES",
-    "size": "180x60",
-    "date": "2017/2018",
-    "asset": "fullsizeoutput_474.jpg",
-    "type": "image"
+    "size": "50x150",
+    "date": "2017",
+    "asset": "assets/img/fullsizeoutput_474.jpeg",
+    "type": "painting"
   },
   {
     "position": {
@@ -73,8 +73,8 @@
     "title": "MULTIVALENCES",
     "size": "180x60",
     "date": "2017/2018",
-    "asset": "fullsizeoutput_477.jpg",
-    "type": "image"
+    "asset": "assets/img/fullsizeoutput_477.jpeg",
+    "type": "painting"
   },
   {
     "position": {
@@ -82,10 +82,10 @@
       "y": 413
     },
     "title": "MULTIVALENCES",
-    "size": "180x60",
-    "date": "2017/2018",
-    "asset": "fullsizeoutput_479.jpg",
-    "type": "image"
+    "size": "20x180",
+    "date": "2018",
+    "asset": "assets/img/fullsizeoutput_479.jpeg",
+    "type": "painting"
   },
   {
     "position": {
@@ -93,10 +93,10 @@
       "y": 267
     },
     "title": "MULTIVALENCES",
-    "size": "180x60",
-    "date": "2017/2018",
-    "asset": "fullsizeoutput_480.jpg",
-    "type": "image"
+    "size": "20x180",
+    "date": "2018",
+    "asset": "assets/img/fullsizeoutput_480.jpeg",
+    "type": "painting"
   },
   {
     "position": {
@@ -104,10 +104,10 @@
       "y": 285
     },
     "title": "MULTIVALENCES",
-    "size": "300x20",
-    "date": "2018",
-    "asset": "fullsizeoutput_481.jpg",
-    "type": "image"
+    "size": "100x300",
+    "date": "2017",
+    "asset": "assets/img/fullsizeoutput_481.jpeg",
+    "type": "painting"
   },
   {
     "position": {
@@ -115,10 +115,10 @@
       "y": 148
     },
     "title": "MULTIVALENCES",
-    "size": "300x20",
-    "date": "2018",
-    "asset": "fullsizeoutput_483.jpg",
-    "type": "image"
+    "size": "100x300",
+    "date": "2017",
+    "asset": "assets/img/fullsizeoutput_483.jpeg",
+    "type": "painting"
   },
   {
     "position": {
@@ -126,10 +126,10 @@
       "y": 400
     },
     "title": "MULTIVALENCES",
-    "size": "20x60",
-    "date": "2018",
-    "asset": "fullsizeoutput_484.jpg",
-    "type": "image"
+    "size": "30x90",
+    "date": "2017",
+    "asset": "assets/img/fullsizeoutput_484.jpeg",
+    "type": "painting"
   },
   {
     "position": {
@@ -137,10 +137,10 @@
       "y": 820
     },
     "title": "MULTIVALENCES",
-    "size": "180x20",
+    "size": "60x360",
     "date": "2018",
-    "asset": "fullsizeoutput_489.jpg",
-    "type": "image"
+    "asset": "assets/img/fullsizeoutput_489.jpeg",
+    "type": "painting"
   },
   {
     "position": {
@@ -148,10 +148,10 @@
       "y": 771
     },
     "title": "MULTIVALENCES",
-    "size": "Détail",
-    "date": "2018",
-    "asset": "fullsizeoutput_495.jpg",
-    "type": "image"
+    "size": "30x90",
+    "date": "2017",
+    "asset": "assets/img/fullsizeoutput_495.jpeg",
+    "type": "painting"
   },
   {
     "position": {
@@ -159,7 +159,7 @@
       "y": 522
     },
     "title": "Alain Blondel",
-    "asset": "fullsizeoutput_47a.jpg",
+    "asset": "assets/img/fullsizeoutput_47a.jpeg",
     "type": "image"
   },
   {
@@ -168,7 +168,7 @@
       "y": 483
     },
     "title": "Alain Blondel",
-    "asset": "fullsizeoutput_47c.jpg",
+    "asset": "assets/img/fullsizeoutput_47c.jpeg",
     "type": "image"
   },
   {
@@ -177,7 +177,7 @@
       "y": 856
     },
     "title": "Alain Blondel",
-    "asset": "fullsizeoutput_47d.jpg",
+    "asset": "assets/img/fullsizeoutput_477.jpeg",
     "type": "image"
   },
   {
