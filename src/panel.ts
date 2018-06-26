@@ -4,6 +4,10 @@ import textTemplate from "./templates/text-template.html";
 
 export default class Panel {
   public static render(panel: Panel): void {
+    if (document.querySelector('.panel')) {
+      return;
+    }
+
     const test = document.createElement('div');
     test.innerHTML = panel.renderedTemplate;
     document.body.appendChild(test);
@@ -14,7 +18,6 @@ export default class Panel {
       this.remove();
     });
 
-    
     window.setTimeout(() => {
       document.querySelector('.panel').className += ' panel--show';
       window.addEventListener('mousedown', this.windowClick);
